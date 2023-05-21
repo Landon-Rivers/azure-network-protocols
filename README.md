@@ -91,3 +91,39 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 7. Open Wireshark and filter for ICMP traffic only.
 </p>
 <br />
+
+
+<p>
+<img src="https://i.imgur.com/WS1RQ9A.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+8. Retrieve the private IP address of the Ubuntu VM and attempt to ping it from within the Windows 10 VM using a command line or PowerShell.
+ a. Observe ping requests and replies within WireShark
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/cL42bf3.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+9. From The Windows 10 VM, attempt to ping a public website (such as www.google.com) and observe the traffic in WireShark.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/AryODHO.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+10. Initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM.
+<img src="https://i.imgur.com/sxpS5g2.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  a. Open the Network Security Group your Ubuntu VM is using and disable incoming (inbound) ICMP traffic.
+<img src="https://i.imgur.com/LZvnWVr.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  b. Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity.
+<img src="https://i.imgur.com/XT45RYA.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  c. Re-enable ICMP traffic for the Network Security Group your Ubuntu VM is using.
+<img src="https://i.imgur.com/KKsJo1x.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  d. Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity (should start working).
+<img src="https://i.imgur.com/HGGdDWc.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  e. Stop the ping activity.
+</p>
+<br />
