@@ -98,6 +98,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <p>
 8. Retrieve the private IP address of the Ubuntu VM and attempt to ping it from within the Windows 10 VM using a command line or PowerShell.
+ 
  a. Observe ping requests and replies within WireShark
 </p>
 <br />
