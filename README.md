@@ -162,3 +162,23 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   b. Exit the SSH connection by typing ‘exit’ and pressing [Enter].
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/WoQTClt.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+13. Back in Wireshark, filter for DHCP traffic only.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/akJ0egW.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+14. From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew).
+</p>
+<p>
+ <img src="https://i.imgur.com//7Yb1Ae4.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  a. Observe the DHCP traffic appearing in WireShark.
+</p>
+<br />
