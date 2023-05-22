@@ -138,3 +138,27 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   e. Stop the ping activity.
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/BXxeWXS.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+11. Back in Wireshark, filter for SSH traffic only.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/sN4if1F.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+12. From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address)
+</p>
+<p>
+ <img src="https://i.imgur.com//3ZVEfjV.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  a. Type commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark.
+</p>
+<p>
+ <img src="https://i.imgur.com/SjRN4tZ.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  b. Exit the SSH connection by typing ‘exit’ and pressing [Enter].
+</p>
+<br />
