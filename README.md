@@ -200,3 +200,39 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <br />
 
+<p>
+<img src="https://i.imgur.com/O1xd8wh.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+17. Back in Wireshark, filter for RDP traffic only (tcp.port == 3389).
+</p>
+<br />
+
+18. Observe the immediate non-stop spam of traffic? Why do you think it’s non-stop spamming vs only showing traffic when you do an activity?
+ a. Answer: because the RDP (protocol) is constantly showing you a live stream from one computer to another, therefor traffic is always being transmitted.
+ 
+<p>
+<img src="https://i.imgur.com/m6F7PP0.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+19. Close your Remote Desktop connection.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/tTe5Al7.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+20. Delete the Resource Group(s) created at the beginning of this lab.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/Q9iCAKU.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+21. Verify Resource Group Deletion.
+</p>
+<br />
+
+This concludes the observation of various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups.
