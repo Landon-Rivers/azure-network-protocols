@@ -182,3 +182,21 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   a. Observe the DHCP traffic appearing in WireShark.
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/P4OsOvN.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+15. Back in Wireshark, filter for DNS traffic only.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/iTVyCCh.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/0tgEMn5.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+16. From your Windows 10 VM within a command line, use nslookup to see what google.com and disney.com’s IP addresses are. Observe the DHCP traffic appearing in WireShark.
+</p>
+<br />
+
